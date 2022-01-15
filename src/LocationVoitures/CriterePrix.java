@@ -10,7 +10,7 @@ public class CriterePrix implements Critere {
 	@Override
 	public boolean estSatisfaitPar(Voiture v) {
 		// TODO Auto-generated method stub
-		return prix==v.getPrixLocation();
+		return prix>=v.getPrixLocation();
 	}
 	
 }
