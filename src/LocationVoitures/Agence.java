@@ -78,6 +78,16 @@ public class Agence {
 		}
 	}
 	
+	public Client getClient(String cin) {
+		Iterator<Client> it= locations.keySet().iterator();
+		while(it.hasNext()) {
+			Client cli=it.next();
+			if(cli.getCin().equals(cin))
+				return cli;
+		}
+		return null;
+	}
+	
 	public Iterator<Voiture> voituresLouees(){
 		Iterator<Voiture> it;
 		
